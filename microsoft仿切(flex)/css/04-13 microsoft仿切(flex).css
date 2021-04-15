@@ -254,6 +254,10 @@ a:first-child .dot-btn {
     transition: 0.1s;
 }
 
+.banner .middle-text:last-child{
+    display: none;
+}
+
 /* ------------------------------------banner bottom------------------------------- */
 
 /* -------------------------------------selection top------------------------------ */
@@ -712,6 +716,7 @@ li p{
     .bar-right{
         width: 530px;
     }
+}
 
 @media (max-width:900px) {
     nav .container .left-link a:nth-child(6), nav .container .left-link a:nth-child(5),
@@ -764,14 +769,26 @@ li p{
     }
 
     .right-link a:nth-child(2){
-        margin-right: 80%;
+        margin-right: calc(100% - 140px);
     }
     .right-link a:nth-child(3){
-        margin-right: 20px;
+        margin-right: 15px;
     }
     .hover{
         width: 50%;
     }
 }
 
+@media(max-width: 767px){
+    .banner{
+        background-color: rgb(233, 233, 233);
+    }
+    .banner a:nth-child(2), .scroll-btn{
+        display: none;
+    }
+
+    .banner a:nth-child(3){
+        position: unset;
+    }
 }
+
